@@ -1,0 +1,33 @@
+.welcome{
+    text-align: center;
+}
+.welcome p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.welcome .name{
+    padding: 5px;
+    font: inherit;
+    margin: 5px;
+}
+.welcome .submit {
+    border: none;
+    color: rgba(256,256,256,0.9);
+    padding: 5px 10px;
+    margin-top: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    background-color: rgba(46, 139, 87,0.9);
+}
+.welcome .submit:focus{
+    outline: 1px solid rgba(0,0,0,0.7)
+}

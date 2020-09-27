@@ -1,0 +1,39 @@
+.ContactData {
+    width: 400px;
+    border: 1px solid #ccc;
+    margin:  100px auto;
+    text-align: center;
+    box-shadow: 0 2px 2px #ccc;
+    padding: 10px;
+}
+
+.Input {
+    width: 100%;
+    padding:5px 10px;
+}
+.InputElement {
+    outline: none;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+}
+.InputElement:focus {
+    background-color: #ccc;
+}
+.ContactData button {
+    border: none;
+    color: rgba(256,256,256,0.9);
+    padding: 5px 10px;
+    margin-top: 8px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    background-color: rgba(46, 139, 87,0.9);
+}
+.ContactData button:focus{
+    outline: 1px solid rgba(0,0,0,0.7)
+}
+.Input .error {
+    font-size: 1.08rem;
+    margin: 5px;
+}
