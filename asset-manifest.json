@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/GooglemapApp/static/css/main.3a1d3ec1.chunk.css",
+    "main.js": "/GooglemapApp/static/js/main.fb3a93df.chunk.js",
+    "main.js.map": "/GooglemapApp/static/js/main.fb3a93df.chunk.js.map",
+    "runtime-main.js": "/GooglemapApp/static/js/runtime-main.f5300c8a.js",
+    "runtime-main.js.map": "/GooglemapApp/static/js/runtime-main.f5300c8a.js.map",
+    "static/js/2.4b5d884e.chunk.js": "/GooglemapApp/static/js/2.4b5d884e.chunk.js",
+    "static/js/2.4b5d884e.chunk.js.map": "/GooglemapApp/static/js/2.4b5d884e.chunk.js.map",
+    "index.html": "/GooglemapApp/index.html",
+    "precache-manifest.58f89b7fd1dd5713a8679ea0b4ef639f.js": "/GooglemapApp/precache-manifest.58f89b7fd1dd5713a8679ea0b4ef639f.js",
+    "service-worker.js": "/GooglemapApp/service-worker.js",
+    "static/css/main.3a1d3ec1.chunk.css.map": "/GooglemapApp/static/css/main.3a1d3ec1.chunk.css.map",
+    "static/js/2.4b5d884e.chunk.js.LICENSE.txt": "/GooglemapApp/static/js/2.4b5d884e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5300c8a.js",
+    "static/js/2.4b5d884e.chunk.js",
+    "static/css/main.3a1d3ec1.chunk.css",
+    "static/js/main.fb3a93df.chunk.js"
+  ]
+}
