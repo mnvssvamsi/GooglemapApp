@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { Component } from 'react'
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom'
 import Map from './components/Map'
 import Auth from './containers/Auth/Auth'
@@ -8,35 +8,38 @@ import * as actions from './Store/actions/index'
 import { connect } from 'react-redux'
 
 
-const App = (props) => {
+class App extends Component {
 
-  useEffect(() => {
-    props.onTryAutoSignUp();
-  }, [])
 
-  let routes = (
-    <Switch>
-      <Route path='/' exact component={Auth} />
-      <Redirect to='/' />
-    </Switch>
-  )
-  if(props.isAuthenticated){
-    routes =(
+  componentDidMount() {
+    this.props.onTryAutoSignUp();
+  }
+
+  render() {
+    let routes = (
       <Switch>
-        <Route path='/names' exact component={Welcome} />
-        <Route path='/names/maps' component={Map} />
-        <Route path='/logout' component={Logout} />
         <Route path='/' exact component={Auth} />
         <Redirect to='/' />
       </Switch>
     )
+    if (this.props.isAuthenticated) {
+      routes = (
+        <Switch>
+          <Route path='/names' exact component={Welcome} />
+          <Route path='/names/maps' component={Map} />
+          <Route path='/logout' component={Logout} />
+          <Route path='/' exact component={Auth} />
+          <Redirect to='/' />
+        </Switch>
+      )
+    }
+    return (
+      <div>
+        {routes}
+      </div>
+    )
   }
 
-  return (
-    <div>
-      {routes}
-    </div>
-  )
 }
 
 const mapStateToProps = state => {

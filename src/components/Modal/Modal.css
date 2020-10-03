@@ -1,55 +1,37 @@
-  .error-modal {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    background-color: #fff;
-    height: 100%;
-    z-index: 100;
-    padding: 10px;
-  }
-  /* .error-modal .name,
-  select {
-    border: 1px solid #ccc;
-    background-color: white;
-    font: inherit;
-    padding: 6px 10px;
-    margin-bottom: 5px;
-    font-weight: 500;
-  } */
-  .reviewButton {
-    border: none;
-    font: inherit;
-    width: 100px;
-    padding: 7px 5px;
-    margin: 50px 5px;
-    color: darkcyan;
-    background: none;
-    font-weight: bold;
-    font-size: 1.2rem;
-    outline: none;
-    cursor: pointer;
-  }
-  .error-modal__actions button {
-    position: absolute;
-    top: 1%;
-    right: 1%;
-    border: none;
-    padding: 7px 15px;
-    color: darkcyan;
-    outline-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    font-size: 1.1rem;
-  }
-  /* .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.75);
-    z-index: 50;
-  } */
-  
+.error-modal {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: #fff;
+  height: 100%;
+  z-index: 100;
+  padding: 10px;
+}
+.reviewButton {
+  border: none;
+  font: inherit;
+  width: 100px;
+  padding: 7px 5px;
+  margin: 50px 5px;
+  color: darkcyan;
+  background: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+}
+.error-modal__actions button {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  border: none;
+  padding: 7px 15px;
+  color: darkcyan;
+  outline-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+

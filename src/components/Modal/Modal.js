@@ -1,15 +1,11 @@
 import React, { useState } from "react";
 import "./Modal.css";
-import {getGeocode} from 'use-places-autocomplete'
 import DisplayReview from "./ReviewModal/DisplayReview/DisplayReview";
 const Modal = React.memo((props) => {
 
   const [reviewSelected, setReviewSelected] =useState(false)
 
-  console.log("modal", props);
 
-  //  getGeocode(props.lat, props.lng)
-  //  .then(res => console.log(res))
 
   const reviewHandler= ()=> {
     setReviewSelected(true)

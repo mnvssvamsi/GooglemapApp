@@ -27,24 +27,24 @@ const nameFail = (state, action) => {
         loading: false
     });
 };
-const fetchNameStart = (state, action) => {
-    return updateObject( state, {
-        error: action.error,
-        loading: false
-    });
-};
-const fetchNameSucces = (state, action) => {
-    return updateObject( state, {
-        error: action.error,
-        loading: false
-    });
-};
-const fetchNameFail = (state, action) => {
-    return updateObject( state, {
-        error: action.error,
-        loading: false
-    });
-};
+// const fetchNameStart = (state, action) => {
+//     return updateObject( state, {
+//         error: action.error,
+//         loading: false
+//     });
+// };
+// const fetchNameSucces = (state, action) => {
+//     return updateObject( state, {
+//         error: action.error,
+//         loading: false
+//     });
+// };
+// const fetchNameFail = (state, action) => {
+//     return updateObject( state, {
+//         error: action.error,
+//         loading: false
+//     });
+// };
 
 
  const reducer =(state= initialState, action)=> {
@@ -55,12 +55,12 @@ const fetchNameFail = (state, action) => {
         return nameSuccess(state,action);
         case actionTypes.NAME_FAIL : 
         return nameFail(state,action);
-        case actionTypes.FETCH_NAME_START : 
-        return fetchNameStart(state,action);
-        case actionTypes.FETCH_NAME_SUCCESS : 
-        return fetchNameSucces(state,action);
-        case actionTypes.FETCH_NAME_FAIL : 
-        return fetchNameFail(state,action);
+        // case actionTypes.FETCH_NAME_START : 
+        // return fetchNameStart(state,action);
+        // case actionTypes.FETCH_NAME_SUCCESS : 
+        // return fetchNameSucces(state,action);
+        // case actionTypes.FETCH_NAME_FAIL : 
+        // return fetchNameFail(state,action);
         default:return state;
     }
 }

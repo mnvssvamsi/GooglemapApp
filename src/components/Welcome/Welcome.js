@@ -8,7 +8,6 @@ import {Redirect} from 'react-router-dom'
     const[name,setName] =useState('')
     const[submitted, setSubmited] =useState(false)
 
-    // console.log("welcome", props.token)
 
     const formSubmitHandler =(e)=> {
         e.preventDefault();
@@ -32,7 +31,6 @@ import {Redirect} from 'react-router-dom'
             />
             <input className='submit' type='submit' />
             </form>
-            {/* {name} */}
         </div>
     )
 }

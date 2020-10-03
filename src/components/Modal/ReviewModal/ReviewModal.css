@@ -1,63 +1,97 @@
 .review-modal {
-    position: fixed;
-    top: 20vh;
-    left: 70vh;
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    background-color: #fff;
-    height: 40%;
-    padding: 10px;
-    z-index: 1000;
-  }
-  .text-label {
-    position: absolute;
-    top: 25px;
-    font-weight: 500;
-    font-size: 1rem;
-  }
-  .review-modal .text {
-    position: absolute;
-    top: 60px;
-    border: 1px solid #ccc;
-    background-color: white;
-    width: 70%;
-    font: inherit;
-    padding: 6px 10px;
-    margin-bottom: 5px;
-    font-weight: 500;
-    outline: none;
-  }
-  
-  .review-modal__actions button {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    border: none;
-    padding: 7px 15px;
-    font-size: 1.1rem;
-    color: darkcyan;
-    outline-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-  }
-  .review-submit{
-    position: absolute;
-    top: 60%;
-    right: 25%;
-    text-transform: uppercase;
-    border: none;
-    padding: 7px 15px;
-    font-size: 1.1rem;
-    color: darkcyan;
-    outline-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-  }
-  .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-  }
+  position: fixed;
+  top: 12vh;
+  left: 70vh;
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  background-color: #fff;
+  height: 85%;
+  padding: 10px;
+  z-index: 300;
+}
+.text-label {
+  position: absolute;
+  top: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.review-modal .text {
+  position: absolute;
+  top: 50px;
+  width: 60%;
+  border: 1px solid #ccc;
+  background-color: white;
+  font: inherit;
+  padding: 6px 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  outline: none;
+}
+.review-modal .input-file {
+  position: absolute;
+  top: 120px;
+  font-size: 0.9rem;
+  color: darkcyan;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+.review-modal .upload-file{
+  position: absolute;
+  top: 150px;
+  font-size: 0.9rem;
+  background-color: darkcyan;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  outline-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.review-modal .progress {
+  position: absolute;
+  top: 160px;
+  left: 100px;
+  background-color: blue;
+}
+
+.review-modal .upload-image{
+  position: absolute;
+  top: 185px;
+  max-width: 300px;
+  max-height: 400px;
+}
+.review-modal__actions button {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border: none;
+  padding: 7px 15px;
+  font-size: 1.1rem;
+  background-color: darkcyan;
+  color: white;
+  outline-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.review-submit{
+  position: absolute;
+  top: 60%;
+  right: 5%;
+  text-transform: uppercase;
+  border: none;
+  padding: 7px 15px;
+  font-size: 1.1rem;
+  background-color: darkcyan;
+  color: white;
+  outline-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 300;
+}

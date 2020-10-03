@@ -7,19 +7,22 @@ class Navbar extends Component {
     console.log("nav", this.props);
     return (
       <nav>
-        <ul className="navbar">
-          <ul className="navbar-home">
-            {!this.props.isAuthenticated ?
-              <li className="NavigationItem">
-                <Link to="/">Login</Link>
-              </li>
-              :
-              <li className="NavigationItem">
-                <Link to="/logout">Logout</Link>
-              </li>
-            }
-          </ul>
-        </ul>
+        <div className="navbar">
+          <div className='Maps' >Maps</div>
+          <div className='login'>
+            <ul className="navbar-home">
+              {!this.props.isAuthenticated ?
+                <li className="NavigationItem">
+                  <Link to="/">Login</Link>
+                </li>
+                :
+                <li className="NavigationItem">
+                  <Link to="/logout">Logout</Link>
+                </li>
+              }
+            </ul>
+          </div>
+        </div>
       </nav>
     );
   }

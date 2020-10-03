@@ -25,7 +25,7 @@ export const nameFail = ( error ) => {
 }
         // getting data from Welcome file and storing as userData and passing it to axios to post.
 export const userName = ( name, token ) => {
-    console.log("action",token)
+    // console.log("action",token)
     const userData= {
         name: name
     }
@@ -42,44 +42,36 @@ export const userName = ( name, token ) => {
     };
 };
 
-export const fetchNameSuccess = (  ) => {
-    return {
-        type: actionTypes.FETCH_NAME_SUCCESS,
-        // orders: orders
-    };
-};
+// export const fetchNameSuccess = (  ) => {
+//     return {
+//         type: actionTypes.FETCH_NAME_SUCCESS,
+//     };
+// };
 
-export const fetchNameFail = ( error ) => {
-    return {
-        type: actionTypes.FETCH_NAME_FAIL,
-        error: error
-    };
-};
+// export const fetchNameFail = ( error ) => {
+//     return {
+//         type: actionTypes.FETCH_NAME_FAIL,
+//         error: error
+//     };
+// };
 
-export const fetchNameStart = () => {
-    return {
-        type: actionTypes.FETCH_NAME_START
-    };
-};
+// export const fetchNameStart = () => {
+//     return {
+//         type: actionTypes.FETCH_NAME_START
+//     };
+// };
 
-export const fetchName = (token, userId) => {
-    return dispatch => {
-        dispatch(fetchNameStart());
-        // const queryParams = '?auth=' + token + '&orderBy="userId"&equalTo="' + userId + '"';
-        axios.get( 'https://map-building-7f022.firebaseio.com/names.json')
-            .then( res => {
-                console.log(res)
-                // const fetchedOrders = [];
-                // for ( let key in res.data ) {
-                //     fetchedOrders.push( {
-                //         ...res.data[key],
-                //         id: key
-                //     } );
-                // }
-                // dispatch(fetchOrdersSuccess(fetchedOrders));
-            } )
-            .catch( err => {
-                dispatch(fetchNameFail(err));
-            } );
-    };
-};
+// export const fetchName = (token, userId) => {
+//     return dispatch => {
+//         dispatch(fetchNameStart());
+//         // const queryParams = '?auth=' + token + '&orderBy="userId"&equalTo="' + userId + '"';
+//         axios.get( 'https://map-building-7f022.firebaseio.com/names.json')
+//             .then( res => {
+//                 console.log(res)
+
+//             } )
+//             .catch( err => {
+//                 dispatch(fetchNameFail(err));
+//             } );
+//     };
+// };

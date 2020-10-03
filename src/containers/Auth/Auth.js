@@ -49,6 +49,7 @@ const Auth = (props) => {
         <Fragment>
             <Navbar />
             {props.isAuthenticated && <Redirect to='/names' />}
+            <div className='mapLogo'></div>
             <div className='ContactData'>
                 {/* {errorMessage && (<p>{props.error.message}</p>)} */}
                 <form onSubmit={(e) => submitHandler(e)} >
