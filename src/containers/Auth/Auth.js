@@ -4,8 +4,11 @@ import { connect } from 'react-redux'
 import * as actions from '../../Store/actions/index';
 import Navbar from '../../components/Navbar/Navbar';
 import { Redirect } from 'react-router-dom';
-
-
+import SmallEclipse from '../../images/small-eclipse.svg';
+import MedEclipse from '../../images/mid-eclipse.svg'
+import BIgEclipse from '../../images/big-eclipse.svg'
+import Footer from '../../components/Footer/Footer';
+import GoogleLogo from '../../images/mapLogo.png'
 const Auth = (props) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -49,7 +52,13 @@ const Auth = (props) => {
         <Fragment>
             <Navbar />
             {props.isAuthenticated && <Redirect to='/names' />}
-            <div className='mapLogo'></div>
+            <div className='headerMain'>
+            <img src={GoogleLogo} alt='logo' />
+                <div className='headerData'>
+                <h1>Google Maps App</h1>
+                <h4>The Place for all the Places </h4>
+                </div>
+            </div>
             <div className='ContactData'>
                 {/* {errorMessage && (<p>{props.error.message}</p>)} */}
                 <form onSubmit={(e) => submitHandler(e)} >
@@ -87,6 +96,12 @@ const Auth = (props) => {
                     SWITCH TO {isSignup ? "SIGN IN" : "REGISTER"}
                 </button>
             </div>
+            <div>
+                <img className='big-circle' src={BIgEclipse} alt='big' />
+                <img className='medium-circle' src={MedEclipse} alt='med' />
+                <img className='small-circle' src={SmallEclipse} alt='small' />
+            </div>
+            <Footer />
         </Fragment>
     )
 }
